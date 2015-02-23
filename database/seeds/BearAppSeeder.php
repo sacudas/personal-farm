@@ -5,9 +5,12 @@ use App\Models\Fish;
 use App\Models\Tree;
 use App\Models\Picnic;
 
+
 class BearAppSeeder extends Seeder {
 
 	public function run() {
+
+
 		// clear our database ------------------------------------------
 		DB::table('bears')->delete();
 		DB::table('fish')->delete();

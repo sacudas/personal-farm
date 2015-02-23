@@ -11,8 +11,13 @@
 	},
 
 	"server": {
-		"php": "0.0.0.0:8080",
-		"watch": []
+		"php": "localhost:8000",
+		"watch": [
+			".tmp/css/**/*.css",
+			".tmp/js/**/*.js",
+			"resources/views/**/*.php",
+			"app/**/*.js"
+		]
 	},
 
 	"bower": {

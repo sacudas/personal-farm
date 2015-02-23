@@ -1,6 +1,7 @@
 var gulp    = require('gulp'),
 	config  = require('../gulpConfig.json'),
 	notify  = require('gulp-notify'),
+	sass    = require('gulp-sass'),
 	inject  = require('gulp-inject');
 
 var scssTasks = function() {
@@ -21,6 +22,7 @@ var scssTasks = function() {
 
 	gulp.task(task, function() {
 		gulp.src(source)
+		.pipe(sass())
 		.pipe(gulp.dest(destination))
 		.on("error", notify.onError(function (error) {
 			return "Error: " + error.message;

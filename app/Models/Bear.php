@@ -27,7 +27,7 @@ Class Bear extends \Eloquent {
 	 * each bear climbs many trees
 	 */
 	public function trees() {
-		return $this->hasMany('Trees');
+		return $this->hasMany('App\Models\Tree');
 	}
 
 	/**
