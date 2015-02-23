@@ -1,0 +1,26 @@
+{
+
+	"global": {
+		"directory": {
+			"base": "resources",
+			"temporary": ".tmp"
+		},
+		"namespaces": [
+			"cd"
+		]
+	},
+
+	"server": {
+		"php": "0.0.0.0:8080",
+		"watch": []
+	},
+
+	"bower": {
+		"cd": {
+		},
+		"admin": {
+
+		}
+	}
+}
+
